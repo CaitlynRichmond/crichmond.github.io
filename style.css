@@ -24,7 +24,7 @@ nav {
 }
 .nav__logo{
   color: var(--navtext);
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: bold;
   padding: 0 2rem;
 }
@@ -34,8 +34,7 @@ nav a{
   padding: 0 1.5rem;
 }
 .nav__menu{
-  font-size: 1.5rem;
-
+  font-size: 2vw;
 }
 
 nav a:hover{
@@ -58,18 +57,18 @@ nav a:hover{
   padding: 0 2rem;
 }
 
+.about__text{
+  font-size: 1.5vw;
+  line-height:1.25;
+}
+
 .header{
   color: var(--headercolor);
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2vw;
   text-align: center;
 }
 
-.body_text{
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  line-height:1.5;
-}
 
 .column_right{
   display: flex;
@@ -88,4 +87,7 @@ nav a:hover{
 .body_text{
   color: var(--bodytext);
   padding: 0rem calc((100vw - 1300px)/2);
+  font-size: 1.25vw;
+  line-height:1.5;
+
 }
