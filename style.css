@@ -2,6 +2,7 @@
   --navcolor: #2a52be;
   --headercolor: #2a52be;
   --navtext: white;
+  --bodytext: black;
 }
 
 *{
@@ -10,13 +11,15 @@
   padding: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*NAV*/
 nav {
   height: 80px;
   background: var(--navcolor);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 12rem;
+  padding: 0rem calc((100vw - 1300px)/2);
 
 }
 .nav__logo{
@@ -39,11 +42,12 @@ nav a:hover{
   color: white;
 }
 
+/*ABOUT*/
 .about_container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 95vh;
-  padding: 3rem 12rem;
+  padding: 3rem calc((100vw - 1300px)/2);
 }
 
 .column_left{
@@ -79,7 +83,9 @@ nav a:hover{
   height: 100%;
 }
 
+/*Text for other sections*/
+
 .body_text{
-  color: black;
-  padding: 0rem 12rem;
+  color: var(--bodytext);
+  padding: 0rem calc((100vw - 1300px)/2);
 }
