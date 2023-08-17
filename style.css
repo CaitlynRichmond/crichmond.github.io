@@ -6,7 +6,6 @@
 }
 
 *{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -14,17 +13,17 @@
 
 /*NAV*/
 nav {
-  height: 80px;
+  height: 100px;
   background: var(--navcolor);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem calc((100vw - 1300px)/2);
+  padding: 0rem 8rem;
 
 }
 .nav__logo{
   color: var(--navtext);
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0 2rem;
 }
@@ -34,60 +33,94 @@ nav a{
   padding: 0 1.5rem;
 }
 .nav__menu{
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 nav a:hover{
-  color: white;
+  color: #CDCDCD;
 }
 
-/*ABOUT*/
-.about_container{
+/*GRID*/
+
+.wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 95vh;
-  padding: 3rem calc((100vw - 1300px)/2);
-}
-
-.column_left{
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 30vw 30vw;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0 2rem;
+  grid-auto-flow: dense;
 }
 
-.about__text{
-  font-size: 1.5vw;
-  line-height:1.25;
-}
 
 .header{
   color: var(--headercolor);
-  margin-bottom: 1rem;
-  font-size: 2vw;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+.body_text{
+  color: var(--bodytext);
+  font-size: 1rem;
+  line-height:1.25;
+  padding: 0.5rem 1rem;
+
+}
+
+.twocolumns{
+  grid-column: span 2;
+}
+
+#home{
+  padding: 15vw 0;
+}
+
+.top{
+  padding: 5vw 0;
+}
+
+.center{
   text-align: center;
 }
 
+h2{
+  color: black;
+  font-size: 2.5rem;
+  padding: 1rem 0rem
+}
 
-.column_right{
-  display: flex;
+.university{
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3{
+  color: lightslategray;
+  font-size: 2rem;
+}
+.degree{
+  color:lightslategray;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.dates{
+  font-size: 1rem;
+  color: black;
+  font-style: italic;
+  padding: 0 0 2rem 0;
+}
+
+.resume__button{
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  padding: 0rem 2rem;
+  padding: 1rem
+
 }
 
-.about__image{
-  width: 100%;
-  height: 100%;
-}
-
-/*Text for other sections*/
-
-.body_text{
-  color: var(--bodytext);
-  padding: 0rem calc((100vw - 1300px)/2);
-  font-size: 1.25vw;
-  line-height:1.5;
+.button{
+  background-color: #2a52be;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
 
 }
