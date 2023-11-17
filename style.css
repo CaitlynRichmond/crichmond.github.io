@@ -1,14 +1,8 @@
 :root{
   --navcolor: #2a52be;
-  --navhovercolor: #CDCDCD;
   --headercolor: #2a52be;
   --navtext: white;
   --bodytext: black;
-  --subheadercolor: black;
-  --subsubheadercolor: lightslategray;
-  --buttoncolor: #2a52be;
-  --buttontext: white;
-  --buttonhover: #47671B;
 }
 
 *{
@@ -43,7 +37,7 @@ nav a{
 }
 
 nav a:hover{
-  color: var(--navhovercolor)
+  color: #CDCDCD;
 }
 
 /*GRID*/
@@ -87,23 +81,23 @@ nav a:hover{
 }
 
 h2{
-  color: var(--subheadercolor);
+  color: black;
   font-size: 2.5rem;
   padding: 1rem 0rem
 }
 
 .university, .workplace{
-  color: var(--subheadercolor);
+  color: black;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 h3{
-  color: var(--subsubheadercolor);
+  color: lightslategray;
   font-size: 2rem;
 }
 .degree, .jobtitle{
-  color:var(--subsubheadercolor);
+  color:lightslategray;
   font-size: 2rem;
   font-style: italic;
 }
@@ -122,17 +116,13 @@ h3{
 }
 
 .button{
-  background-color: var(--buttoncolor);
-  color: var(--buttontext);
+  background-color: #2a52be;
+  color: white;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
   text-decoration: none;
 
-}
-
-.button:hover{
-  background-color: var(--buttonhover);
 }
 
 .list{
